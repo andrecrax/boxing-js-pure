@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Pompadour';
+  src: url('./fonts/Pompadour.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -21,9 +28,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 560px;   /* tamanho dobrado */
-  height: 560px;  /* tamanho dobrado */
-  font-size: 300px; /* tamanho dobrado */
+  width: 560px;   
+  height: 560px; 
+  font-size: 370px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #fff;
   background: #007bff;
   border: none;
