@@ -15,17 +15,20 @@ mirrorBtn.addEventListener("click", () => {
 });
 
 function createRandomButton() {
-    container.innerHTML = '';
+  container.innerHTML = '';
 
   // Pequeno atraso para "desaparecer" antes de mostrar novo
   setTimeout(() => {
-    const btnValue = Math.random() < 0.5 ? "1" : "2";
+    // Gera um número inteiro entre 1 e 4
+    const btnValue = Math.floor(Math.random() * 4) + 1;
+    
     const btn = document.createElement("button");
     btn.textContent = btnValue;
     btn.className = "random-btn"; 
     container.appendChild(btn);
   }, 100);
 }
+
 
 function startRandomButtons() {
   createRandomButton();
